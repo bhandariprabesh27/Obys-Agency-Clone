@@ -156,7 +156,7 @@ body {
   width: 72%;
   height: fit-content;
   margin-left: 27%;
-  overflow: hidden;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   position: relative;
@@ -171,8 +171,17 @@ body {
   font-size: 7.2vw;
   font-weight: 500;
   line-height: 7.2vw;
+  position: relative;
 }
-
+#hero1::before {
+  content: "01";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "Silk Serif";
+  left: 20%;
+  top: 29%;
+}
 .hero h2 {
   text-transform: uppercase;
   font-size: 7.2vw;
@@ -248,7 +257,7 @@ body {
   width: 100%;
   /* background-color: rgb(106, 88, 88); */
   position: relative;
-  padding-top: 5vh;
+  padding: 7vh 0;
 }
 #page4-content {
   width: 72vw;
@@ -258,9 +267,19 @@ body {
 #page4-content h1 {
   font-size: 7vw;
   text-transform: uppercase;
+  position: relative;
+}
+#page4-content h1::before {
+  content: "03";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "Silk Serif";
+  left: -12%;
+  top: 8%;
 }
 #page4-content .underline {
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: #fff;
   margin: 5vw 0;
@@ -300,10 +319,135 @@ body {
   border-bottom: 2px solid #ffffff90;
   /* background-color: red; */
 }
-.blue-div-elem h4{
+.blue-div-elem h4 {
   font-size: 1.4vw;
 }
 .blue-div-elem p {
   width: 40%;
   font-size: 0.8vw;
+}
+
+#page5 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.elem {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+.elem h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #fff;
+  /* background-color: red; */
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  animation-name: animeHero;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes animeHero {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.elem2 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-bottom: -2vw;
+}
+.elem2 h1 {
+  font-size: 7vw;
+  font-weight: 400;
+  -webkit-text-stroke: 1px #fff;
+  /* background-color: red; */
+  color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 16px;
+  transform: translateX(calc(-100% - 20px));
+  animation-name: animeHero;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.elem span {
+  font-style: italic;
+  font-family: "Silk Serif";
+  color: transparent;
+}
+.elem2 span {
+  font-style: italic;
+  font-family: "Silk Serif";
+  color: transparent;
+}
+
+#footer {
+  /* background-color: red; */
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  padding-left: 28vw;
+  padding-right: 2vw;
+}
+
+#footer h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#footer h1::before {
+  content: "04";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "Silk Serif";
+  left: -12%;
+  top: 8%;
+}
+
+#footer .underline {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+
+#footer-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 15vw;
+  padding-top: 4vw;
+  margin-bottom: 6vw;
+}
+.box {
+  width: 20%;
+}
+#footer-div h6 {
+  font-size: 0.9vw;
+  font-weight: 500;
+  margin-bottom: 1.5vw;
+}
+
+#footer-div h5 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin: 0.2vh 0;
+}
+#footer > h5 {
+  font-size: 1vw;
+  font-weight: 500;
 }
