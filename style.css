@@ -159,7 +159,6 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
-  position: relative;
   z-index: 99999;
 }
 .hero:nth-child(2) {
@@ -180,7 +179,7 @@ body {
   font-weight: 100;
   font-family: "Silk Serif";
   left: 20%;
-  top: 29%;
+  top: 33%;
 }
 .hero h2 {
   text-transform: uppercase;
